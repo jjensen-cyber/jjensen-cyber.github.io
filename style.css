@@ -1,3 +1,104 @@
-h1 {
-    color: #ffffff;
+/* Dark Mode Button */
+/* Light Mode (Default) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --card-bg: #f4f4f5;
+  --border-color: #e4e4e7;
+  --button-bg: #e4e4e7;
+  --button-text: #1a1a1a;
+}
+
+/* Dark Mode */
+body.dark-theme {
+  --bg-color: #121212;
+  --text-color: #f4f4f5;
+  --card-bg: #1e1e1e;
+  --border-color: #27272a;
+  --button-bg: #27272a;
+  --button-text: #ffffff;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: system-ui, -apple-system, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Toggle Theme Button Styling */
+#theme-toggle {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover Effect */
+#theme-toggle:hover {
+  opacity: 0.9;
+}
+
+/* Action Buttons */
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.btn-outline {
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+/* gap */
+.action-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.nav-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
