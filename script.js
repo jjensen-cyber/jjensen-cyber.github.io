@@ -1,3 +1,4 @@
+// to check if js is working
 console.log("JavaScript is successfully linked!");
 
 const toggleButton = document.getElementById('theme-toggle');
