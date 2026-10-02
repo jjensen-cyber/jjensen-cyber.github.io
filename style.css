@@ -97,13 +97,26 @@ body {
   margin-bottom: 2rem;
 }
 
-.nav-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
 /* smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* top bar and scrolling */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000; /* Keeps the bar on top of other content */
+}
+
+/* Add padding or margin to your body/content so text isn't hidden under the bar */
+.content {
+  margin-top: 50px; 
+  padding: 20px;
 }

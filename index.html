@@ -9,6 +9,7 @@
         <script src="script.js" defer></script>
     </head>
     <body>
+        <div class="content">
         <button id="theme-toggle" aria-label="Toggle dark mode">
             Dark Mode
         </button>
@@ -18,19 +19,16 @@
                 <h1>Joshua Jensen</h1>
                 <p>I mainly focus on cybersecurity and IT, but sometimes I dabble in a bit of programming.</p>
             </header>
-        <div class="action-container">
-                <div class="download-row">
-                    <a href="assets/JoshuaResume.pdf" download="JoshuaResume.pdf" class="btn btn-primary">Download Resume</a>
-                </div>
-
-                <nav class="nav-row" aria-label="Resume Sections">
+            <div class="top-bar" aria-label="Resume Sections">
                     <a href="#about" class="btn btn-secondary">About</a>
                     <a href="#skills" class="btn btn-secondary">Skills and Tools</a>
                     <a href="#experience" class="btn btn-secondary">Experience</a>
                     <a href="#education" class="btn btn-secondary">Education</a>
                     <a href="#projects" class="btn btn-secondary">Projects</a>
-                </nav>
             </div>
+                <div class="download-row">
+                    <a href="assets/JoshuaResume.pdf" download="JoshuaResume.pdf" class="btn btn-primary">Download Resume</a>
+                </div>
         <section id="about">
             <h2>About Me</h2>
             <p>Computer Science Student focusing on cybersecurity and IT.</p>
@@ -110,6 +108,7 @@
                     LinkedIn
                 </a>
             </p>
+        </section>
         </footer>
     </main>
 </body>
